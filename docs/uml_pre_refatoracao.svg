@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+    <!-- Classes -->
+
+    <!-- Game Class -->
+    <rect x="300" y="50" width="200" height="140" fill="white" stroke="black"/>
+    <line x1="300" y1="80" x2="500" y2="80" stroke="black"/>
+    <line x1="300" y1="120" x2="500" y2="120" stroke="black"/>
+    <text x="400" y="70" text-anchor="middle" font-weight="bold">Game</text>
+    <text x="310" y="100" font-size="12">- screen: Surface</text>
+    <text x="310" y="115" font-size="12">- clock: Clock</text>
+    <text x="310" y="140" font-size="12">+ __init__()</text>
+    <text x="310" y="155" font-size="12">+ events()</text>
+    <text x="310" y="170" font-size="12">+ update()</text>
+    <text x="310" y="185" font-size="12">+ draw()</text>
+
+    <!-- MoveText Class -->
+    <rect x="300" y="250" width="200" height="160" fill="white" stroke="black"/>
+    <line x1="300" y1="280" x2="500" y2="280" stroke="black"/>
+    <line x1="300" y1="340" x2="500" y2="340" stroke="black"/>
+    <text x="400" y="270" text-anchor="middle" font-weight="bold">MoveText</text>
+    <text x="310" y="300" font-size="12">- font: Font</text>
+    <text x="310" y="315" font-size="12">- color: tuple</text>
+    <text x="310" y="330" font-size="12">- text: string</text>
+    <text x="310" y="360" font-size="12">+ __init__(text, font_size, color)</text>
+    <text x="310" y="375" font-size="12">+ update()</text>
+    <text x="310" y="390" font-size="12">+ change_color()</text>
+    <text x="310" y="405" font-size="12">+ draw(screen)</text>
+
+    <!-- Config Module -->
+    <rect x="50" y="150" width="180" height="100" fill="white" stroke="black"/>
+    <line x1="50" y1="180" x2="230" y2="180" stroke="black"/>
+    <text x="140" y="170" text-anchor="middle" font-weight="bold">Config</text>
+    <text x="60" y="200" font-size="12">SCREEN_WIDTH: int</text>
+    <text x="60" y="215" font-size="12">SCREEN_HEIGHT: int</text>
+    <text x="60" y="230" font-size="12">FPS: int</text>
+    <text x="60" y="245" font-size="12">COLORS: tuple</text>
+
+    <!-- Relationships -->
+    <!-- Game uses MoveText -->
+    <line x1="400" y1="190" x2="400" y2="250" stroke="black" marker-end="url(#arrow)"/>
+    <text x="420" y="220" font-size="12">uses</text>
+
+    <!-- Game uses Config -->
+    <line x1="300" y1="120" x2="230" y2="180" stroke="black" marker-end="url(#arrow)"/>
+    <text x="250" y="140" font-size="12">uses</text>
+
+    <!-- Arrow marker definition -->
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="black"/>
+        </marker>
+    </defs>
+</svg>

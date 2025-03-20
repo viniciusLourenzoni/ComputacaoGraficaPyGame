@@ -24,7 +24,7 @@ pip install pygame
 
 3. Para personalizar o fundo:
    - Coloque uma imagem do espaço estrelado com o nome `espaco.jpg` (ou .png) na pasta `/imagens/`
-   - Se a imagem não for encontrada, o programa gerará um campo de estrelas procedural automaticamente
+   - Se a imagem não for encontrada, o programa usará um fundo cinza escuro
 
 ## Como executar
 
@@ -56,11 +56,15 @@ python DVD/main.py
 
 ### Diagrama pré-refatoração
 
-[Cole aqui o diagrama UML antes da refatoração]
+Para incluir o diagrama UML antes da refatoração:
+
+![Diagrama UML pré-refatoração](docs/uml_pre_refatoracao.svg)
 
 ### Diagrama pós-refatoração
 
-[Cole aqui o diagrama UML depois da refatoração]
+Para incluir o diagrama UML após a refatoração, salve a imagem como `uml_pos_refatoracao.svg` na pasta `docs/`:
+
+_Nota: O arquivo do diagrama pós-refatoração ainda não foi adicionado à pasta docs._
 
 ## Observação
 

@@ -23,6 +23,9 @@ class GerenciadorFundo:
         # Tenta carregar a imagem de fundo
         self.imagem_fundo = None
         
+        # Cor de fundo padrão (cinza escuro)
+        self.cor_fundo = (40, 40, 40)  # Cinza escuro
+        
         # Tenta carregar a imagem de fundo
         try:
             caminho_imagem = os.path.join(self.caminho_base, "imagens", "espaco.jpg")
@@ -34,8 +37,10 @@ class GerenciadorFundo:
                 print(f"Imagem de fundo carregada: {caminho_imagem}")
             else:
                 print(f"Imagem de fundo não encontrada: {caminho_imagem}")
+                print("Usando fundo cinza padrão.")
         except Exception as e:
             print(f"Erro ao carregar imagem de fundo: {e}")
+            print("Usando fundo cinza padrão.")
     
     def atualizar(self):
         """Método vazio, mantido para compatibilidade"""
@@ -52,5 +57,5 @@ class GerenciadorFundo:
             # Desenha a imagem de fundo se estiver disponível
             screen.blit(self.imagem_fundo, (0, 0))
         else:
-            # Desenha um fundo preto simples
-            screen.fill((0, 0, 0)) 
+            # Desenha um fundo cinza simples
+            screen.fill(self.cor_fundo) 
