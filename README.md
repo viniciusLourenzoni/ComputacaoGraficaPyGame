@@ -56,15 +56,11 @@ python DVD/main.py
 
 ### Diagrama pré-refatoração
 
-Para incluir o diagrama UML antes da refatoração:
-
 ![Diagrama UML pré-refatoração](docs/uml_pre_refatoracao.svg)
 
 ### Diagrama pós-refatoração
 
-Para incluir o diagrama UML após a refatoração, salve a imagem como `uml_pos_refatoracao.svg` na pasta `docs/`:
-
-_Nota: O arquivo do diagrama pós-refatoração ainda não foi adicionado à pasta docs._
+![Diagrama UML pré-refatoração](docs/uml_pos_refatoracao.svg)
 
 ## Observação
 
